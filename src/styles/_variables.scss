@@ -1,0 +1,24 @@
+/* ====== COLORS ========= */
+$clr-dark: hsl(230, 35, 7);
+$clr-light: hsl(231, 77, 90);
+$clr-white: hsl(0, 0, 100);
+
+/* ====== TYPOGRAPHY ========= */
+@font-face {
+  font-family: "Bellefair";
+  src: url("~/public/fonts/Bellefair-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("~/public/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("~/public/fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+$ff-serif: "Bellefair", serif;
+$ff-sans-cond: "Barlow Condensed", sans-serif;
+$ff-sans-normal: "Barlow", sans-serif;

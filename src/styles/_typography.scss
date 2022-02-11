@@ -1,0 +1,41 @@
+$heading-sizes: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text-subheading-1 {
+  font-family: $ff-serif;
+  font-size: 1.75rem;
+  line-height: 1.15;
+}
+
+.text-subheading-2 {
+  letter-spacing: 2.35ch;
+  font-size: 0.875rem;
+  font-family: $ff-sans-cond;
+  line-height: 1.18;
+}
+
+.text-nav {
+  font-family: $ff-sans-cond;
+  font-size: 1rem;
+  letter-spacing: 2.7ch;
+  line-height: 1.2;
+}
+
+.text-body {
+  font-family: $ff-sans-cond;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+@for $i from 1 through length($heading-sizes) {
+  $size: nth($heading-sizes, $i);
+
+  .text-heading-#{$i} {
+    font-family: $ff-serif;
+    font-size: $size;
+    line-height: 1.15;
+  }
+}
