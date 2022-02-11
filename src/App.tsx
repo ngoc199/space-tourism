@@ -1,9 +1,14 @@
 import React from 'react';
+import Button from './components/Button';
+import NavLink from './components/NavLink';
 import './styles/global.scss';
 
 function App() {
   return (
-    <div className='text-heading-1'>Hello World</div>
+    <div style={{ backgroundColor: 'black' }}>
+      <Button>Explore</Button>
+      <NavLink href='#'>Active</NavLink>
+    </div>
   );
 }
 

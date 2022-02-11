@@ -1,0 +1,16 @@
+@import "../styles/global.scss";
+
+.slider-dot {
+  @include square(15px);
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: hslac($clr-light, 0.17);
+
+  &:hover {
+    background-color: hslac($clr-light, 0.5);
+  }
+
+  &#{&}--active {
+    background-color: $clr-light;
+  }
+}

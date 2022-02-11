@@ -1,0 +1,23 @@
+@import "../styles/global.scss";
+
+.nav__item {
+  display: inline-block;
+  list-style: none;
+  border-bottom: 3px solid transparent;
+  padding-top: 39px;
+  padding-bottom: 35px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: $clr-light;
+  }
+
+  &:hover {
+    border-color: hslac($clr-light, 0.5);
+  }
+
+  &#{&}--active {
+    border-color: $clr-light;
+  }
+}
