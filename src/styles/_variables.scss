@@ -25,13 +25,10 @@ $ff-sans-normal: "Barlow", sans-serif;
 
 /* ====== BREAKPOINTS ========= */
 $breakpoints: (
-  "mobile": (
-    max-width: 375px,
-  ),
   "tablet": (
-    max-width: 768px,
+    min-width: 376px,
   ),
   "desktop": (
-    max-width: 1440px,
+    min-width: 769px,
   ),
 ) !default;
