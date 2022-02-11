@@ -22,3 +22,16 @@ $clr-light: hsl(0, 0, 100);
 $ff-serif: "Bellefair", serif;
 $ff-sans-cond: "Barlow Condensed", sans-serif;
 $ff-sans-normal: "Barlow", sans-serif;
+
+/* ====== BREAKPOINTS ========= */
+$breakpoints: (
+  "mobile": (
+    max-width: 375px,
+  ),
+  "tablet": (
+    max-width: 768px,
+  ),
+  "desktop": (
+    max-width: 1440px,
+  ),
+) !default;
