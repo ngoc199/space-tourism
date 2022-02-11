@@ -1,0 +1,21 @@
+@import "../styles/global.scss";
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 13 {
+  .col-#{$i} {
+    flex-basis: 8.33% * $i;
+  }
+
+  .col-tablet-#{$i} {
+    flex-basis: 8.33% * $i;
+  }
+
+  .col-desktop-#{$i} {
+    flex-basis: 8.33% * $i;
+  }
+}

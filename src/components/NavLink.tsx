@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './NavLink.scss'
 
 type NavLinkProps = {
@@ -9,7 +10,7 @@ type NavLinkProps = {
 const NavLink: React.FC<NavLinkProps> = ({ active, children, href }) => {
   return (
     <li className={'text-nav nav__item text--light ' + (active ? 'nav__item--active' : '')}>
-      <a href={href}>{children}</a>
+      <Link to={href}>{children}</Link>
     </li>
   )
 }
