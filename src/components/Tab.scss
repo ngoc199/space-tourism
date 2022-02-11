@@ -1,0 +1,15 @@
+@import "../styles/global.scss";
+
+.tab {
+  padding-bottom: 12px;
+  color: $clr-accent;
+  cursor: pointer;
+
+  &#{&}--active {
+    border-color: $clr-light;
+  }
+
+  &:hover {
+    border-color: hslac($clr-light, 0.5);
+  }
+}

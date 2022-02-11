@@ -1,0 +1,19 @@
+@import "../styles/global.scss";
+
+.slider-circle-button {
+  @include square(80px);
+  background-color: transparent;
+  border: 1px solid hslac($clr-light, 0.25);
+  padding: 22px 32px;
+  color: $clr-light;
+
+  &:hover {
+    border-color: $clr-light;
+  }
+
+  &#{&}--active {
+    border-color: $clr-light;
+    background-color: $clr-light;
+    color: $clr-dark;
+  }
+}
