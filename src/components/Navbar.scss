@@ -2,4 +2,41 @@
 
 .navbar {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 24px;
+
+  .navbar__line {
+    flex-grow: 1;
+    border: 1px solid hslac($clr-light, 0.25);
+    margin-right: -30px;
+    margin-left: 64px;
+    z-index: 1000;
+    display: none;
+
+    @include respond-to("desktop") {
+      display: unset;
+    }
+  }
+
+  .navbar__links {
+    margin: 0;
+    padding: 0;
+    background-color: hslac($clr-light, 0.04);
+    backdrop-filter: blur(81.5485px);
+    padding-right: 165px;
+    padding-left: 123px;
+    display: none;
+
+    li:not(:first-child) {
+      margin-left: 3rem;
+    }
+
+    @include respond-to("tablet") {
+      display: block;
+    }
+  }
 }

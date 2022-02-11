@@ -5,9 +5,15 @@ type ContainerProps = React.HTMLProps<HTMLDivElement> & {
   fluid?: boolean
 }
 
-const Container: React.FC<ContainerProps> = ({ fluid, children, ...rest }) => {
+const Container: React.FC<ContainerProps> = ({ fluid, children, className, ...rest }) => {
+
+  const containerClassName = [
+    fluid ? 'container-fluid' : 'container',
+    className || ''
+  ].join(' ')
+
   return (
-    <div {...rest} className={fluid ? 'container-fluid' : 'container'}>{children}</div>
+    <div {...rest} className={containerClassName}>{children}</div>
   )
 }
 

@@ -1,14 +1,18 @@
 import React from 'react';
-import Button from './components/Button';
-import NavLink from './components/NavLink';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import './styles/global.scss';
 
 function App() {
   return (
-    <div style={{ backgroundColor: 'black' }}>
-      <Button>Explore</Button>
-      <NavLink href='#'>Active</NavLink>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

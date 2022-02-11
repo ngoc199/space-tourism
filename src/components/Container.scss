@@ -3,6 +3,7 @@
 .container {
   @include padding-x(24px);
   @include margin-x(auto);
+  width: 100%;
   max-width: 327px;
 
   @include respond-to("tablet") {

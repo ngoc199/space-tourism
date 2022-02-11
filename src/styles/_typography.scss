@@ -25,7 +25,7 @@ $heading-sizes: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
 }
 
 .text-body {
-  font-family: $ff-sans-cond;
+  font-family: $ff-sans-normal;
   font-size: 1.125rem;
   line-height: 1.8;
 }
@@ -37,5 +37,24 @@ $heading-sizes: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
     font-family: $ff-serif;
     font-size: $size;
     line-height: 1.15;
+  }
+}
+
+// TEXT ALIGNMENT
+$text-alignments: left, center, right, justify;
+
+@each $align in $text-alignments {
+  .text--#{$align} {
+    text-align: $align;
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include respond-to($breakpoint) {
+    @each $align in $text-alignments {
+      .text-#{$breakpoint}--#{$align} {
+        text-align: $align;
+      }
+    }
   }
 }

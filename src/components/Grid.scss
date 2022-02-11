@@ -6,16 +6,21 @@
   flex-wrap: wrap;
 }
 
-@for $i from 1 through 13 {
+$col-width: 100% / 12;
+
+@for $i from 1 through 12 {
   .col-#{$i} {
-    flex-basis: 8.33% * $i;
+    flex: 0 0 auto;
+    width: $col-width * $i;
   }
+}
 
-  .col-tablet-#{$i} {
-    flex-basis: 8.33% * $i;
-  }
-
-  .col-desktop-#{$i} {
-    flex-basis: 8.33% * $i;
+@each $breakpoint, $value in $breakpoints {
+  @for $i from 1 through 12 {
+    @include respond-to($breakpoint) {
+      .col-#{$breakpoint}-#{$i} {
+        width: $col-width * $i;
+      }
+    }
   }
 }

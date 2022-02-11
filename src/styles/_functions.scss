@@ -5,3 +5,11 @@
     @error "You didn't pass a color object";
   }
 }
+
+@function base-spacing-multiply($value) {
+  @if (type-of($value) == "number") {
+    @return $base-spacing * $value;
+  } @else {
+    @error "You didn't pass a number value";
+  }
+}
