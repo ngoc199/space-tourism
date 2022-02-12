@@ -20,4 +20,13 @@
   &#{&}--active {
     border-color: $clr-light;
   }
+
+  &__number {
+    display: none;
+    @include respond-to("desktop") {
+      display: inline-block;
+      margin-right: 0.75rem;
+      font-weight: 700;
+    }
+  }
 }

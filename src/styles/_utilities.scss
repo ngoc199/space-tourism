@@ -1,0 +1,200 @@
+@for $i from 0 through 10 {
+  .m-#{$i} {
+    margin: base-spacing-multiply($i);
+  }
+
+  .mt-#{$i} {
+    margin-top: base-spacing-multiply($i);
+  }
+
+  .mb-#{$i} {
+    margin-bottom: base-spacing-multiply($i);
+  }
+
+  .ml-#{$i} {
+    margin-left: base-spacing-multiply($i);
+  }
+
+  .mr-#{$i} {
+    margin-right: base-spacing-multiply($i);
+  }
+
+  .mx-#{$i} {
+    margin-left: base-spacing-multiply($i);
+    margin-right: base-spacing-multiply($i);
+  }
+
+  .my-#{$i} {
+    margin-top: base-spacing-multiply($i);
+    margin-bottom: base-spacing-multiply($i);
+  }
+
+  .p-#{$i} {
+    padding: base-spacing-multiply($i);
+  }
+
+  .pt-#{$i} {
+    padding-top: base-spacing-multiply($i);
+  }
+
+  .pb-#{$i} {
+    padding-bottom: base-spacing-multiply($i);
+  }
+
+  .pl-#{$i} {
+    padding-left: base-spacing-multiply($i);
+  }
+
+  .pr-#{$i} {
+    padding-right: base-spacing-multiply($i);
+  }
+
+  .px-#{$i} {
+    padding-left: base-spacing-multiply($i);
+    padding-right: base-spacing-multiply($i);
+  }
+
+  .py-#{i} {
+    padding-top: base-spacing-multiply($i);
+    padding-bottom: base-spacing-multiply($i);
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include respond-to($breakpoint) {
+    @for $i from 0 through 10 {
+      .m-#{$breakpoint}-#{$i} {
+        margin: base-spacing-multiply($i);
+      }
+
+      .mt-#{$breakpoint}-#{$i} {
+        margin-top: base-spacing-multiply($i);
+      }
+
+      .mb-#{$breakpoint}-#{$i} {
+        margin-bottom: base-spacing-multiply($i);
+      }
+
+      .ml-#{$breakpoint}-#{$i} {
+        margin-left: base-spacing-multiply($i);
+      }
+
+      .mr-#{$breakpoint}-#{$i} {
+        margin-right: base-spacing-multiply($i);
+      }
+
+      .mx-#{$breakpoint}-#{$i} {
+        margin-left: base-spacing-multiply($i);
+        margin-right: base-spacing-multiply($i);
+      }
+
+      .my-#{$breakpoint}-#{$i} {
+        margin-top: base-spacing-multiply($i);
+        margin-bottom: base-spacing-multiply($i);
+      }
+
+      .p-#{$breakpoint}-#{$i} {
+        padding: base-spacing-multiply($i);
+      }
+
+      .pt-#{$breakpoint}-#{$i} {
+        padding-top: base-spacing-multiply($i);
+      }
+
+      .pb-#{$breakpoint}-#{$i} {
+        padding-bottom: base-spacing-multiply($i);
+      }
+
+      .pl-#{$breakpoint}-#{$i} {
+        padding-left: base-spacing-multiply($i);
+      }
+
+      .pr-#{$breakpoint}-#{$i} {
+        padding-right: base-spacing-multiply($i);
+      }
+
+      .px-#{$breakpoint}-#{$i} {
+        padding-left: base-spacing-multiply($i);
+        padding-right: base-spacing-multiply($i);
+      }
+
+      .py-#{$breakpoint}-#{i} {
+        padding-top: base-spacing-multiply($i);
+        padding-bottom: base-spacing-multiply($i);
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include respond-to($breakpoint) {
+    .flex-#{$breakpoint}-row {
+      flex-direction: row;
+    }
+
+    .flex-#{$breakpoint}-column {
+      flex-direction: column;
+    }
+
+    .flex-#{$breakpoint}-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .flex-#{$breakpoint}-column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+// JUSTIFY CONTENT & ALIGN ITEMS
+$flex-aligns: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+);
+
+@each $name, $align in $flex-aligns {
+  .justify-content-#{$name} {
+    justify-content: $align;
+  }
+
+  .align-items-#{$name} {
+    align-items: $align;
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @each $name, $align in $flex-aligns {
+    @include respond-to($breakpoint) {
+      .justify-content-#{$breakpoint}-#{$name} {
+        justify-content: $align;
+      }
+
+      .align-items-#{$breakpoint}-#{$name} {
+        align-items: $align;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../styles/global.scss";
+
+.container {
+  @include padding-x(24px);
+  @include margin-x(auto);
+  width: 100%;
+  max-width: 327px;
+
+  @include respond-to("tablet") {
+    max-width: 691px;
+  }
+
+  @include respond-to("desktop") {
+    max-width: 1110px;
+  }
+
+  &-fluid {
+    max-width: unset;
+  }
+}
