@@ -1,0 +1,15 @@
+@import "../styles/global.scss";
+
+#destination {
+  background-image: url("~/public/img/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  min-height: 100vh;
+
+  @include respond-to("tablet") {
+    background-image: url("~/public/img/destination/background-destination-tablet.jpg");
+  }
+
+  @include respond-to("desktop") {
+    background-image: url("~/public/img/destination/background-destination-desktop.jpg");
+  }
+}

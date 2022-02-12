@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .bg--dark {
   background-color: $clr-dark;
 }

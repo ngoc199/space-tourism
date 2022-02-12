@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 $heading-sizes: 5rem, 3.5rem, 1.5rem, 1.25rem, 0.875rem;
 $heading-sizes-tablet-up: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
 

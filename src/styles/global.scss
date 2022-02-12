@@ -1,2 +1,7 @@
-@import "normalize", "variables", "functions", "mixins", "colors", "typography",
-  "utilities";
+@forward "normalize";
+@forward "variables";
+@forward "functions";
+@forward "mixins";
+@forward "colors";
+@forward "typography";
+@forward "utilities";
