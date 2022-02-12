@@ -4,8 +4,8 @@
   background-image: url("~/public/img/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 387px;
-  padding-bottom: 131px;
+  padding-top: 112px;
+  padding-bottom: 48px;
   min-height: 100vh;
 
   @include respond-to("tablet") {
@@ -13,6 +13,8 @@
   }
 
   @include respond-to("desktop") {
+    padding-top: 387px;
+    padding-bottom: 131px;
     background-image: url("~/public/img/home/background-home-desktop.jpg");
   }
 }
