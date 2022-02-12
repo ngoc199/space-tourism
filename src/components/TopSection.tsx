@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './TopSection.scss'
-
 type TopSectionProps = React.HTMLProps<HTMLDivElement>
 
 const TopSection: React.FC<TopSectionProps> = ({ children, className, ...rest }) => {

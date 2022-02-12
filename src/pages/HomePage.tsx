@@ -3,7 +3,6 @@ import Button from '../components/Button'
 import Container from '../components/Container'
 import Grid from '../components/Grid'
 import TopSection from '../components/TopSection'
-import './HomePage.scss'
 
 const HomePage: React.FC<{}> = () => {
   return (

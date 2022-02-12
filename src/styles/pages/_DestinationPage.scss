@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@import "../global.scss";
 
 #destination {
   background-image: url("~/public/img/destination/background-destination-mobile.jpg");
@@ -11,5 +11,16 @@
 
   @include respond-to("desktop") {
     background-image: url("~/public/img/destination/background-destination-desktop.jpg");
+  }
+
+  .destination__line {
+    border-color: #383b4b;
+    width: 100%;
+  }
+
+  .destination__image {
+    @include respond-to("desktop") {
+      margin-top: 97px;
+    }
   }
 }

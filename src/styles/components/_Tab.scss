@@ -1,11 +1,13 @@
-@use "../styles/global.scss" as *;
+@use "../global" as *;
 
 .tab {
   padding-bottom: 12px;
   color: $clr-accent;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
 
   &#{&}--active {
+    color: $clr-light;
     border-color: $clr-light;
   }
 

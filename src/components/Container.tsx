@@ -1,5 +1,4 @@
 import React from 'react'
-import './Container.scss'
 
 type ContainerProps = React.HTMLProps<HTMLDivElement> & {
   fluid?: boolean

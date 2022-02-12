@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import DestinationPage from './pages/DestinationPage';
 import HomePage from './pages/HomePage';
-import './styles/global.scss';
+import './styles/index.scss';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/destinations' element={<DestinationPage />} />
       </Routes>
     </BrowserRouter>
   );

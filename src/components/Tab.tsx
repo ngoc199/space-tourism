@@ -1,12 +1,13 @@
 import React from 'react'
 
 type TabProps = {
+  onClick: (...args: any) => void
   active?: boolean
 }
 
-const Tab: React.FC<TabProps> = ({ children, active }) => {
+const Tab: React.FC<TabProps> = ({ children, active, onClick }) => {
   return (
-    <div className={'text-nav text--white text--uppercase tab ' + (active ? 'tab--active' : '')}>{children}</div>
+    <div className={'text-nav text--light text--uppercase tab ' + (active ? 'tab--active' : '')} onClick={onClick}>{children}</div>
   )
 }
 
