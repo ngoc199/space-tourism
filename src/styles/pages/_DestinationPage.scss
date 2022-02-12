@@ -1,0 +1,26 @@
+@import "../global.scss";
+
+#destination {
+  background-image: url("~/public/img/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  min-height: 100vh;
+
+  @include respond-to("tablet") {
+    background-image: url("~/public/img/destination/background-destination-tablet.jpg");
+  }
+
+  @include respond-to("desktop") {
+    background-image: url("~/public/img/destination/background-destination-desktop.jpg");
+  }
+
+  .destination__line {
+    border-color: #383b4b;
+    width: 100%;
+  }
+
+  .destination__image {
+    @include respond-to("desktop") {
+      margin-top: 97px;
+    }
+  }
+}

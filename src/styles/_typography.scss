@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 $heading-sizes: 5rem, 3.5rem, 1.5rem, 1.25rem, 0.875rem;
 $heading-sizes-tablet-up: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
 
@@ -39,7 +42,12 @@ $heading-sizes-tablet-up: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
   $size-tablet-up: nth($heading-sizes-tablet-up, $i);
 
   .text-heading-#{$i} {
-    font-family: $ff-serif;
+    @if $i == 5 {
+      font-family: $ff-sans-cond;
+      letter-spacing: 4.725px;
+    } @else {
+      font-family: $ff-serif;
+    }
     font-size: $size;
     line-height: 1.15;
 

@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@use "../global" as *;
 
 .row {
   display: flex;

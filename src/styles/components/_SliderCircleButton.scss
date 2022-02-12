@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@use "../global" as *;
 
 .slider-circle-button {
   @include square(80px);

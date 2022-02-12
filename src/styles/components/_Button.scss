@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@use "../global" as *;
 
 .button {
   border-width: 0;

@@ -1,0 +1,19 @@
+// Global styles
+@use "global";
+
+// Components styles
+@use "components/Button";
+@use "components/Container";
+@use "components/Grid";
+@use "components/Navbar";
+@use "components/NavLink";
+@use "components/SliderCircleButton";
+@use "components/SliderDot";
+@use "components/Tab";
+@use "components/TabsBar";
+@use "components/Title";
+@use "components/TopSection";
+
+// Pages styles
+@use "pages/DestinationPage";
+@use "pages/HomePage";

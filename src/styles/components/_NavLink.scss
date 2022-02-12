@@ -1,4 +1,4 @@
-@import "../styles/global.scss";
+@use "../global" as *;
 
 .nav__item {
   display: inline-block;

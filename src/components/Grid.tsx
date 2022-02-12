@@ -1,11 +1,16 @@
 import React from 'react'
-import './Grid.scss'
 
 type GridProps = React.HTMLProps<HTMLDivElement>
 
-const Grid: React.FC<GridProps> = ({ children, ...rest }) => {
+const Grid: React.FC<GridProps> = ({ children, className, ...rest }) => {
+
+  const gridClasses = [
+    'row',
+    className || ''
+  ]
+
   return (
-    <div {...rest} className='row'>{children}</div>
+    <div {...rest} className={gridClasses.join(' ')}>{children}</div>
   )
 }
 

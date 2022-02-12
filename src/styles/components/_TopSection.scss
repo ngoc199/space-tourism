@@ -1,0 +1,14 @@
+@use "../global.scss" as *;
+
+.top-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 112px;
+  padding-bottom: 48px;
+  min-height: 100vh;
+
+  @include respond-to("desktop") {
+    padding-top: 212px;
+    padding-bottom: 131px;
+  }
+}

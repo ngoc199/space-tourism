@@ -2,13 +2,11 @@ import React from 'react'
 import Button from '../components/Button'
 import Container from '../components/Container'
 import Grid from '../components/Grid'
-import './Home.scss'
+import TopSection from '../components/TopSection'
 
-type Props = {}
-
-const Home = (props: Props) => {
+const HomePage: React.FC<{}> = () => {
   return (
-    <div id='home'>
+    <TopSection id='home'>
       <Container>
         <Grid>
           <div className="col-12 col-desktop-5 text--center text-desktop--left">
@@ -21,8 +19,8 @@ const Home = (props: Props) => {
           </div>
         </Grid>
       </Container>
-    </div>
+    </TopSection>
   )
 }
 
-export default Home
+export default HomePage
