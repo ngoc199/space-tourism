@@ -3,10 +3,14 @@
 .button {
   border-width: 0;
   border-radius: 50%;
-  @include square(274px);
+  @include square(150px);
   position: relative;
   cursor: pointer;
   background-color: $clr-light;
+
+  @include respond-to("desktop") {
+    width: 274px;
+  }
 
   &:hover {
     &::before {
