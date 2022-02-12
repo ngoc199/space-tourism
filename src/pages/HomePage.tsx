@@ -2,11 +2,9 @@ import React from 'react'
 import Button from '../components/Button'
 import Container from '../components/Container'
 import Grid from '../components/Grid'
-import './Home.scss'
+import './HomePage.scss'
 
-type Props = {}
-
-const Home = (props: Props) => {
+const HomePage: React.FC<{}> = () => {
   return (
     <div id='home'>
       <Container>
@@ -25,4 +23,4 @@ const Home = (props: Props) => {
   )
 }
 
-export default Home
+export default HomePage
