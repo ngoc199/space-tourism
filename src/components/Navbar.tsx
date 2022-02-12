@@ -27,9 +27,9 @@ const Navbar: React.FC<NavbarProps> = () => {
       <nav className='navbar__nav'>
         <ul className={'nav__links ' + (open ? 'nav__links--open' : '')}>
           <NavLink linkNumber={0} href='/' onClick={handleClose}>Home</NavLink>
-          <NavLink linkNumber={1} href='/destination' onClick={handleClose}>Destination</NavLink>
-          <NavLink linkNumber={2} href='/crew' onClick={handleClose}>Crew</NavLink>
-          <NavLink linkNumber={3} href='/technology' onClick={handleClose}>Technology</NavLink>
+          <NavLink linkNumber={1} href='/destinations' onClick={handleClose}>Destination</NavLink>
+          <NavLink linkNumber={2} href='/crews' onClick={handleClose}>Crew</NavLink>
+          <NavLink linkNumber={3} href='/technologies' onClick={handleClose}>Technology</NavLink>
         </ul>
       </nav>
 
