@@ -41,6 +41,7 @@ $heading-sizes-tablet-up: 9.375rem, 6.25rem, 3.5rem, 2rem, 1.75rem;
   .text-heading-#{$i} {
     @if $i == 5 {
       font-family: $ff-sans-cond;
+      letter-spacing: 4.725px;
     } @else {
       font-family: $ff-serif;
     }
