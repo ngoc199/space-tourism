@@ -2,11 +2,12 @@ import React from 'react'
 import Button from '../components/Button'
 import Container from '../components/Container'
 import Grid from '../components/Grid'
+import TopSection from '../components/TopSection'
 import './HomePage.scss'
 
 const HomePage: React.FC<{}> = () => {
   return (
-    <div id='home'>
+    <TopSection id='home'>
       <Container>
         <Grid>
           <div className="col-12 col-desktop-5 text--center text-desktop--left">
@@ -19,7 +20,7 @@ const HomePage: React.FC<{}> = () => {
           </div>
         </Grid>
       </Container>
-    </div>
+    </TopSection>
   )
 }
 
