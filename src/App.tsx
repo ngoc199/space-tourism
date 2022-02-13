@@ -18,6 +18,7 @@ function App() {
         <Route path='/crews' element={<CrewPage />} />
         <Route path='/technologies' element={<TechnologyPage />} />
       </Routes>
+      <footer className='bg--accent text--dark py-2 text--center'>&copy; Made with ♥ by <a href="ngocoder.com">Ngoc Nguyen Duy Minh</a></footer>
     </BrowserRouter>
   );
 }
