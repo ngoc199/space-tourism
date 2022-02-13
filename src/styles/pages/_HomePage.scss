@@ -1,17 +1,15 @@
-@import "../global.scss";
+@use "../global.scss" as *;
 
 #home {
   background-image: url("~/public/img/home/background-home-mobile.jpg");
 
   @include respond-to("tablet") {
+    padding-top: 202px;
     background-image: url("~/public/img/home/background-home-tablet.jpg");
   }
 
   @include respond-to("desktop") {
     background-image: url("~/public/img/home/background-home-desktop.jpg");
-  }
-
-  @include respond-to("desktop") {
     padding-top: 387px;
   }
 }
