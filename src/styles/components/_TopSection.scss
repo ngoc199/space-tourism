@@ -7,6 +7,10 @@
   padding-bottom: 48px;
   min-height: 100vh;
 
+  @include respond-to("tablet") {
+    padding-top: 136px;
+  }
+
   @include respond-to("desktop") {
     padding-top: 212px;
     padding-bottom: 131px;
