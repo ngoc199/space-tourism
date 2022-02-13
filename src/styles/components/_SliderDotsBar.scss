@@ -1,0 +1,5 @@
+.slider-dots {
+  & > *:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
