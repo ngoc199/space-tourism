@@ -1,0 +1,62 @@
+@use "../global" as *;
+
+#technology {
+  background-image: url("~/public/img/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  min-height: 100vh;
+
+  @include respond-to("tablet") {
+    background-image: url("~/public/img/technology/background-technology-tablet.jpg");
+  }
+
+  @include respond-to("desktop") {
+    background-image: url("~/public/img/technology/background-technology-desktop.jpg");
+  }
+
+  .technology__image {
+    margin-top: 60px;
+  }
+
+  .technology__desktop-image {
+    display: none;
+    @include respond-to("desktop") {
+      display: block;
+      margin-right: -130px;
+      img {
+        height: 100%;
+        width: auto;
+        max-width: unset;
+      }
+    }
+  }
+
+  .technology__details-wrapper {
+    margin-top: 56px;
+
+    @include respond-to("desktop") {
+    }
+  }
+
+  .technology__selector {
+    @include respond-to("desktop") {
+      margin-right: 80px;
+    }
+  }
+
+  .technology__selector > *:not(:first-child) {
+    margin-left: 1rem;
+
+    @include respond-to("desktop") {
+      margin-left: unset;
+      margin-top: 1rem;
+    }
+  }
+
+  .technology__details {
+    margin-top: 44px;
+    @include respond-to("desktop") {
+      margin-top: unset;
+      margin-right: 130px;
+    }
+  }
+}
