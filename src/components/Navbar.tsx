@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   }
 
   return (
-    <header className='navbar mt-10'>
+    <header className='navbar mt-desktop-10 mt-tablet-0'>
 
       <Link className='navbar__logo' to='/'><img src="/img/shared/logo.svg" alt="Space Tourism Logo" /></Link>
 

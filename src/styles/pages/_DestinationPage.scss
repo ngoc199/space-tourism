@@ -1,4 +1,4 @@
-@import "../global.scss";
+@use "../global.scss" as *;
 
 #destination {
   background-image: url("~/public/img/destination/background-destination-mobile.jpg");

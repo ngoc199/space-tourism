@@ -1,0 +1,82 @@
+@use "../global" as *;
+
+#crew {
+  background-image: url("~/public/img/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 0;
+
+  @include respond-to("tablet") {
+    background-image: url("~/public/img/crew/background-crew-tablet.jpg");
+  }
+
+  @include respond-to("desktop") {
+    background-image: url("~/public/img/crew/background-crew-desktop.jpg");
+  }
+
+  .crew__display {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "img"
+      "details";
+
+    @include respond-to("tablet") {
+      grid-template-areas:
+        "title"
+        "details"
+        "img";
+    }
+
+    @include respond-to("desktop") {
+      grid-template-areas:
+        "title img"
+        "details img";
+    }
+  }
+
+  .crew__title {
+    grid-area: title;
+  }
+
+  .crew__details {
+    grid-area: details;
+  }
+
+  .crew__selector {
+    @include respond-to("desktop") {
+      margin-top: 88px;
+      margin-bottom: 94px;
+    }
+  }
+
+  .crew__image {
+    grid-area: img;
+    text-align: center;
+    border-bottom: 1px solid #383b4b;
+
+    @include respond-to("tablet") {
+      border: none;
+    }
+
+    img {
+      max-height: 223px;
+      height: 100%;
+
+      @include respond-to("tablet") {
+        max-height: unset;
+        height: unset;
+      }
+    }
+  }
+
+  .details__role {
+    color: hslac($clr-light, 0.5);
+  }
+
+  .details__bio {
+    @include respond-to("desktop") {
+      max-width: 444px;
+    }
+  }
+}
