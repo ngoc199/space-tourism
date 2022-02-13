@@ -58,7 +58,7 @@
     padding-right: base-spacing-multiply($i);
   }
 
-  .py-#{i} {
+  .py-#{$i} {
     padding-top: base-spacing-multiply($i);
     padding-bottom: base-spacing-multiply($i);
   }
