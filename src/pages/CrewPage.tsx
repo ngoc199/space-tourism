@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from '../components/Container'
-import Grid from '../components/Grid'
 import SliderDotsBar from '../components/SliderDotsBar'
 import Title from '../components/Title'
 import TopSection from '../components/TopSection'
