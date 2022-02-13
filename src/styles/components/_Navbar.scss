@@ -58,11 +58,16 @@
       width: unset;
       height: unset;
       display: block;
-      padding-right: 165px;
-      padding-left: 123px;
+      padding-right: 46px;
+      padding-left: 48px;
       li:not(:first-child) {
         margin-left: 3rem;
       }
+    }
+
+    @include respond-to("desktop") {
+      padding-right: 165px;
+      padding-left: 123px;
     }
 
     &--open {
